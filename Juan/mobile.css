@@ -1,11 +1,14 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  font-size: 22px;
+html {
+  font-size: 20px;
+}
+ body {
+  font-size: 1rem; /* Usa rem para que herede de html */
   font-family: 'Gentium', GentiumPlus, serif;
   line-height: 1.6;
   color: #333333;
@@ -26,6 +29,7 @@ html, body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-bottom: 35px;
   border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
 }
 
 .header .name {
@@ -34,6 +38,38 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Estilos para los botones (ahora con clases) */
+.font-btn {
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    background: #1a4b7a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-btn.increase:hover, 
+.font-btn.decrease:hover {
+    background: #2a6da5;
+}
+
+.font-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* Transición suave para cambios de tamaño */
+.chapter.section {
+    transition: font-size 0.3s ease;
 }
 
 .book-intro {
