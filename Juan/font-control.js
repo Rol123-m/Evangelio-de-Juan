@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Configuración
     const STEP = 1;
-    const MIN_SIZE = 12;
+    const MIN_SIZE = 20;
     const MAX_SIZE = 40;
     const DEFAULT_SIZE = 16;
     const STORAGE_KEY = 'fontSizePreference';
